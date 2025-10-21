@@ -30,3 +30,17 @@ Obs: Este é um exemplo de como pode ser criado o serviço de report, sinta-se a
     }
 }
 ```
+
+## Execução da Tarefa (Report)
+
+Para executar o serviço responsável por gerar o relatório de vendas, utilize os comandos abaixo:
+
+```bash
+docker compose up -d --build report-service
+```
+
+Em seguida, para visualizar o relatório atualizado no console:
+
+```bash
+docker logs report-service
+```
